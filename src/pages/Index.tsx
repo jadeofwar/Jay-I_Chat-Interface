@@ -9,8 +9,8 @@ const Index = () => {
   const { toast } = useToast();
 
   // Simple auth - you can customize these credentials
-  const VALID_USERNAME = "admin";
-  const VALID_PASSWORD = "your-secure-password";
+  const VALID_USERNAME = "jadeofwar";
+  const VALID_PASSWORD = "93745thst.JD";
 
   const handleLogin = (credentials: { username: string; password: string }) => {
     // Simple username/password check
