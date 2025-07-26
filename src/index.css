@@ -75,6 +75,49 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+/* Custom n8n chat styling for Apple-like appearance */
+:root {
+  --chat--color-primary: hsl(var(--primary));
+  --chat--color-primary-shade-50: hsl(var(--primary) / 0.9);
+  --chat--color-primary-shade-100: hsl(var(--primary) / 0.8);
+  --chat--color-secondary: hsl(var(--secondary));
+  --chat--color-secondary-shade-50: hsl(var(--secondary) / 0.9);
+  --chat--color-white: hsl(var(--background));
+  --chat--color-light: hsl(var(--muted));
+  --chat--color-light-shade-50: hsl(var(--muted) / 0.8);
+  --chat--color-light-shade-100: hsl(var(--muted) / 0.6);
+  --chat--color-medium: hsl(var(--border));
+  --chat--color-dark: hsl(var(--foreground));
+  --chat--color-disabled: hsl(var(--muted-foreground));
+  --chat--color-typing: hsl(var(--muted-foreground));
+
+  --chat--spacing: 1.5rem;
+  --chat--border-radius: 1rem;
+  --chat--transition-duration: 0.3s;
+
+  --chat--window--width: 100%;
+  --chat--window--height: 500px;
+
+  --chat--header--padding: var(--chat--spacing);
+  --chat--header--background: hsl(var(--card));
+  --chat--header--color: hsl(var(--card-foreground));
+  --chat--header--border-bottom: 1px solid hsl(var(--border) / 0.2);
+
+  --chat--message--font-size: 1rem;
+  --chat--message--padding: 1rem 1.25rem;
+  --chat--message--border-radius: 1.25rem;
+  --chat--message--bot--background: hsl(var(--muted) / 0.5);
+  --chat--message--bot--color: hsl(var(--foreground));
+  --chat--message--user--background: hsl(var(--primary));
+  --chat--message--user--color: hsl(var(--primary-foreground));
+
+  --chat--toggle--background: hsl(var(--primary));
+  --chat--toggle--hover--background: hsl(var(--primary) / 0.9);
+  --chat--toggle--active--background: hsl(var(--primary) / 0.8);
+  --chat--toggle--color: hsl(var(--primary-foreground));
+  --chat--toggle--size: 64px;
+}
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
