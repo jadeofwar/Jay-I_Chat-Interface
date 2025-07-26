@@ -1,21 +1,6 @@
-import { useEffect } from "react";
-import '@n8n/chat/style.css';
-import { createChat } from '@n8n/chat';
+import { IMessageChat } from "@/components/iMessageChat";
 
 const Index = () => {
-  useEffect(() => {
-    createChat({
-      webhookUrl: 'https://n8n.devore.consulting/webhook/9b5fb1c6-4c13-431f-be3f-6ad3b36d94e8/chat',
-      mode: 'window',
-      target: '#chat-container',
-      initialMessages: [
-        'Hi there! 👋',
-        'I\'m Jay-I, your family assistant. How can I help you today?'
-      ],
-      showWelcomeScreen: false,
-    });
-  }, []);
-
   return (
     <div className="min-h-screen relative">
       {/* Hero Section with Family Photo */}
@@ -35,14 +20,9 @@ const Index = () => {
           </p>
         </div>
 
-        {/* Floating Chat Container */}
+        {/* iMessage-style Chat Container */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-          <div className="floating-chat-wrapper">
-            <div 
-              id="chat-container" 
-              className="chat-widget-container"
-            />
-          </div>
+          <IMessageChat webhookUrl="https://n8n.devore.consulting/webhook/9b5fb1c6-4c13-431f-be3f-6ad3b36d94e8/chat" />
         </div>
       </div>
     </div>
