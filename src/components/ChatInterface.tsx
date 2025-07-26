@@ -13,7 +13,7 @@ interface Message {
 }
 
 interface ChatInterfaceProps {
-  onLogout: () => void;
+  onLogout?: () => void;
   n8nEndpoint?: string;
 }
 
@@ -134,14 +134,16 @@ export const ChatInterface = ({ onLogout, n8nEndpoint }: ChatInterfaceProps) => 
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
               <Settings className="w-4 h-4" />
             </Button>
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              onClick={onLogout}
-              className="text-muted-foreground hover:text-foreground"
-            >
-              <LogOut className="w-4 h-4" />
-            </Button>
+            {onLogout && (
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={onLogout}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                <LogOut className="w-4 h-4" />
+              </Button>
+            )}
           </div>
         </div>
       </div>
