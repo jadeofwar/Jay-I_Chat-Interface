@@ -202,8 +202,9 @@
 .message-input {
   flex: 1;
   border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: white;
+  border: 1px solid rgba(0, 122, 255, 0.3);
+  background: linear-gradient(135deg, #007AFF 0%, #0056D6 100%);
+  color: white;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   resize: none;
